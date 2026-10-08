@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Qué es la Física?</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: radial-gradient(circle at 50% 0%, rgba(0, 200, 255, 0.25), transparent 60%);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #00c6ff, #a855f7, #ff6b6b);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #b0b0c0;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 35px 40px;
+      margin-bottom: 30px;
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #00c6ff;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .icon {
+      font-size: 1.6rem;
+    }
+
+    p {
+      margin-bottom: 14px;
+      font-size: 1.05rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+
+    ul li {
+      padding: 10px 0 10px 30px;
+      position: relative;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+      font-size: 1.02rem;
+    }
+
+    ul li:last-child {
+      border-bottom: none;
+    }
+
+    ul li::before {
+      content: "⚛";
+      position: absolute;
+      left: 0;
+      color: #a855f7;
+    }
+
+    .formulas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .formula-card {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(0, 198, 255, 0.3);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: border-color 0.3s ease;
+    }
+
+    .formula-card:hover {
+      border-color: #a855f7;
+    }
+
+    .formula-card .eq {
+      font-size: 1.5rem;
+      color: #ffd166;
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    .formula-card .desc {
+      font-size: 0.9rem;
+      color: #a0a0b8;
+    }
+
+    .timeline {
+      position: relative;
+      margin-top: 20px;
+      padding-left: 30px;
+      border-left: 3px solid #a855f7;
+    }
+
+    .timeline .event {
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    .timeline .event::before {
+      content: "";
+      position: absolute;
+      left: -37px;
+      top: 6px;
+      width: 14px;
+      height: 14px;
+      background: #00c6ff;
+      border-radius: 50%;
+      border: 3px solid #302b63;
+    }
+
+    .timeline .year {
+      color: #ffd166;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .timeline .event p {
+      margin: 4px 0 0;
+      color: #c0c0d4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #70708a;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      section { padding: 25px 20px; }
+      h2 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>¿Qué es la Física?</h1>
+    <p>La ciencia que estudia la materia, la energía, el movimiento y las fuerzas que gobiernan el universo.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2><span class="icon">🌌</span> Definición</h2>
+      <p>
+        La <strong>física</strong> es la rama de la ciencia natural que estudia los fenómenos fundamentales de la
+        naturaleza: la materia, la energía, el espacio, el tiempo y las fuerzas que los conectan.
+        Su objetivo es describir y predecir cómo se comporta el universo, desde las partículas subatómicas
+        hasta las galaxias.
+      </p>
+      <p>
+        Es una de las ciencias más antiguas y, junto con la química y la biología, forma parte de las
+        <em>ciencias naturales</em>. Sus leyes se expresan mediante modelos matemáticos que permiten
+        explicar desde la caída de una manzana hasta la expansión del cosmos.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="icon">📚</span> Ramas de la Física</h2>
+      <ul>
+        <li><strong>Mecánica:</strong> estudia el movimiento de los cuerpos y las fuerzas que lo producen.</li>
+        <li><strong>Termodinámica:</strong> analiza el calor, la temperatura y la transferencia de energía.</li>
+        <li><strong>Electromagnetismo:</strong> describe la electricidad, el magnetismo y la luz.</li>
+        <li><strong>Óptica:</strong> se ocupa del comportamiento de la luz y los fenómenos asociados.</li>
+        <li><strong>Ondas y acústica:</strong> estudia la propagación de ondas y el sonido.</li>
+        <li><strong>Cuántica:</strong> describe el comportamiento de la materia a escala atómica y subatómica.</li>
+        <li><strong>Relatividad:</strong> explora el espacio-tiempo y la gravedad a grandes escalas.</li>
+        <li><strong>Astrofísica:</strong> aplica las leyes físicas para estudiar estrellas, planetas y galaxias.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="icon">🧮</span> Fórmulas Fundamentales</h2>
+      <div class="formulas">
+        <div class="formula-card">
+          <div class="eq">F = m · a</div>
+          <div class="desc">Segunda Ley de Newton: la fuerza es igual a masa por aceleración.</div>
+        </div>
+        <div class="formula-card">
+          <div class="eq">E = m · c²</div>
+          <div class="desc">Equivalencia masa-energía de Einstein.</div>
+        </div>
+        <div class="formula-card">
+          <div class="eq">V = I · R</div>
+          <div class="desc">Ley de Ohm: relación entre voltaje, corriente y resistencia.</div>
+        </div>
+        <div class="formula-card">
+          <div class="eq">p = m · v</div>
+          <div class="desc">Cantidad de movimiento (momentum lineal).</div>
+        </div>
+        <div class="formula-card">
+          <div class="eq">E<sub>k</sub> = ½ m v²</div>
+          <div class="desc">Energía cinética de un cuerpo en movimiento.</div>
+        </div>
+        <div class="formula-card">
+          <div class="eq">F = G · (m₁m₂ / r²)</div>
+          <div class="desc">Ley de Gravitación Universal de Newton.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="icon">⏳</span> Historia Breve</h2>
+      <div class="timeline">
+        <div class="event">
+          <span class="year">Siglo IV a.C.</span>
+          <p>Aristóteles formula las primeras teorías sobre el movimiento y la naturaleza.</p>
+        </div>
+        <div class="event">
+          <span class="year">1687</span>
+          <p>Isaac Newton publica los <em>Principia Mathematica</em> con sus tres leyes del movimiento y la gravitación.</p>
+        </div>
+        <div class="event">
+          <span class="year">1865</span>
+          <p>James Clerk Maxwell unifica electricidad y magnetismo con sus ecuaciones.</p>
+        </div>
+        <div class="event">
+          <span class="year">1905</span>
+          <p>Albert Einstein publica la Teoría de la Relatividad Especial y E = mc².</p>
+        </div>
+        <div class="event">
+          <span class="year">1925-1927</span>
+          <p>Se sientan las bases de la mecánica cuántica (Heisenberg, Schrödinger, Bohr).</p>
+        </div>
+        <div class="event">
+          <span class="year">Hoy</span>
+          <p>La física busca unificar todas las fuerzas en una Teoría del Todo y explora el cosmos con el LHC y telescopios espaciales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="icon">💡</span> ¿Por qué es importante?</h2>
+      <p>
+        La física es la base de gran parte de la tecnología moderna: desde los teléfonos móviles y las computadoras,
+        hasta los satélites, los medicamentos y la energía eléctrica. Entenderla nos permite comprender el mundo
+        que nos rodea, tomar mejores decisiones basadas en evidencia y seguir explorando los misterios del universo.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 — Página educativa sobre la Física | prubsjus-stack</p>
+  </footer>
+
+</body>
+</html>
